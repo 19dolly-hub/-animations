@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yoyo animation</title>
+    <style>
+      button {
+        background: transparent;
+        border: none;
+        font-size: 2rem;
+        margin: 1rem;
+      }
+    
+      .yoyo-x button {
+        animation: yoyo-x 0.8s infinite;
+      }
+      @keyframes yoyo-x {
+        0% {
+          transform: translate(0%);
+        }
+        50% {
+          transform: translate(50%);
+        }
+      }
+
+      .yoyo-y button {
+        animation: yoyo-y 0.9s infinite;
+      }
+      @keyframes yoyo-y {
+        0% {
+          transform: translate(0%);
+        }
+        50% {
+          transform: translateY(-50%);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="yoyo-x">
+      <button>😍</button>
+    </div>
+    <div class="yoyo-y">
+      <button>🤣</button>
+    </div>
+  </body>
+</html>
